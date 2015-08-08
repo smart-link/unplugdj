@@ -66,7 +66,12 @@ Room = React.createClass({
 		var genre = 'Pop';
 		var roomName = '8/8 해커톤!!!';
 
-		
+		RoomsCollection.insert({
+		  createdBy: Meteor.userId(),
+		  createdAt: new Date(),
+		  roomName: roomName,
+		  gendre: genre
+		});
 	},
 
 	render() {
