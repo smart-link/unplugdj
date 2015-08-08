@@ -7,17 +7,13 @@ var Action = Reflux.createActions([
 ]);
 
 var Store = Reflux.createStore({
-	// mixins: [RefluxStateMixin],
 	listenables: [Action],
-	init() {
-    Meteor.subscribe('rooms');
-  },
 	getInitialState() {
     return {
-      roomList: RoomsCollection.findOne()		//룸 목록.
+      roomId: null		//룸아이디
     }
   },
-	onCreateRoom: function (gendre, roomName) {
+	onCreateRoom: function (genre, roomName) {
 
 	},
 	onEnterRoom: function (roomId) {
@@ -67,10 +63,10 @@ Room = React.createClass({
 		var roomName = '8/8 해커톤!!!';
 
 		RoomsCollection.insert({
-		  createdBy: Meteor.userId(),
-		  createdAt: new Date(),
-		  roomName: roomName,
-		  gendre: genre
+			createdBy: Meteor.userId(),
+			createdAt: new Date(),
+			roomName: roomName,
+			gendre: genre
 		});
 	},
 
