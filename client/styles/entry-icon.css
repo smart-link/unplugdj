@@ -1,0 +1,148 @@
+@font-face {
+	font-family: 'entry-icon';
+	src:url('/icons/entry-icon.eot?r6g61d');
+	src:url('/icons/entry-icon.eot?#iefixr6g61d') format('embedded-opentype'),
+		url('/icons/entry-icon.ttf?r6g61d') format('truetype'),
+		url('/icons/entry-icon.woff?r6g61d') format('woff'),
+		url('/icons/entry-icon.svg?r6g61d#entry-icon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'entry-icon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-About_icon:before {
+	content: "\e600";
+}
+.icon-Add_icon:before {
+	content: "\e601";
+}
+.icon-Avatar_icon:before {
+	content: "\e602";
+}
+.icon-Block_icon:before {
+	content: "\e603";
+}
+.icon-Blog_icon:before {
+	content: "\e604";
+}
+.icon-Chat_icon:before {
+	content: "\e605";
+}
+.icon-Classic_icon:before {
+	content: "\e606";
+}
+.icon-Delete_icon:before {
+	content: "\e607";
+}
+.icon-Downarrow_icon:before {
+	content: "\e608";
+}
+.icon-Electronic_icon:before {
+	content: "\e609";
+}
+.icon-Entryzone_icon:before {
+	content: "\e60a";
+}
+.icon-Exit_icon:before {
+	content: "\e60b";
+}
+.icon-Facebook_icon:before {
+	content: "\e60c";
+}
+.icon-Friends_icon:before {
+	content: "\e60d";
+}
+.icon-Hiphop_icon:before {
+	content: "\e60e";
+}
+.icon-Home_icon:before {
+	content: "\e60f";
+}
+.icon-Indie_icon:before {
+	content: "\e610";
+}
+.icon-Jazz_icon:before {
+	content: "\e611";
+}
+.icon-Joinlist_icon:before {
+	content: "\e612";
+}
+.icon-Like_icon:before {
+	content: "\e613";
+}
+.icon-List_icon:before {
+	content: "\e614";
+}
+.icon-Members_icon:before {
+	content: "\e615";
+}
+.icon-Mention_icon:before {
+	content: "\e616";
+}
+.icon-Metal_icon:before {
+	content: "\e617";
+}
+.icon-Mic_icon:before {
+	content: "\e618";
+}
+.icon-Newage_icon:before {
+	content: "\e619";
+}
+.icon-Others_icon:before {
+	content: "\e61a";
+}
+.icon-Playlist_icon:before {
+	content: "\e61b";
+}
+.icon-Pop_icon:before {
+	content: "\e61c";
+}
+.icon-Profile_icon:before {
+	content: "\e61d";
+}
+.icon-Raggae_icon:before {
+	content: "\e61e";
+}
+.icon-Rnb_icon:before {
+	content: "\e61f";
+}
+.icon-Rock_icon:before {
+	content: "\e620";
+}
+.icon-Search_icon:before {
+	content: "\e621";
+}
+.icon-Settings_icon:before {
+	content: "\e622";
+}
+.icon-Share_icon:before {
+	content: "\e623";
+}
+.icon-Shop_icon:before {
+	content: "\e624";
+}
+.icon-Soundcloud_icon:before {
+	content: "\e625";
+}
+.icon-Support_icon:before {
+	content: "\e626";
+}
+.icon-Twitter_icon:before {
+	content: "\e627";
+}
+.icon-Youtube_icon:before {
+	content: "\e628";
+}

@@ -15,3 +15,5 @@ rocket:webpack
 kadira:reaktor
 http
 jhribal:reflux
+accounts-ui
+accounts-password
