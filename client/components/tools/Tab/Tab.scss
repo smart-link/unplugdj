@@ -1,0 +1,380 @@
+@charset "utf-8";
+
+/*
+	css 기본 베이스 & 리셋
+ */
+html {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 12px;
+  font-weight: normal;
+  vertical-align: baseline;
+  background: transparent;
+  min-width:320px;
+}
+
+html, html a {
+    -webkit-font-smoothing: antialiased;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+   font-size: 12px;
+  font-weight: normal;
+  vertical-align: baseline;
+  background: transparent;
+  font-family: 'Nanum Barun Gothic', '맑은 고딕', sans-serif;
+  div {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-weight: normal;
+    vertical-align: baseline;
+    background: transparent;
+  }
+}
+
+span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, menu, nav, section, time, mark, audio, video, details, summary {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: normal;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* font size */
+$f11 :  .917em;
+$f12 : 1em;
+$f13 : 1.083em;
+$f14 : 1.167em;
+$f15 : 1.250em;
+$f16 : 1.333em;
+$f17 : 1.417em;
+$f18 : 1.500em;
+$f19 : 1.583em;
+$f20 : 1.667em;
+$f22 : 1.833em;
+$f24 : 2.000em;
+$f28 : 2.333em;
+
+article, aside, figure, footer, header, nav, section, details, summary {
+  display: block;
+}
+
+* {
+  box-sizing: border-box;
+  &:before, &:after {
+    box-sizing: border-box;
+  }
+}
+
+img, object, embed {
+  max-width: 100%;
+}
+
+html {
+  overflow-y: scroll;
+}
+
+ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote {
+  &:before, &:after {
+    content: '';
+    content: none;
+  }
+}
+
+q {
+  &:before, &:after {
+    content: '';
+    content: none;
+  }
+}
+
+a {
+    &:hover,
+    &:active,
+    &:visited {
+        text-decoration: none;
+        color: inherit;
+    }
+    &:link {
+        text-decoration: none;
+        color: inherit;
+        -webkit-tap-highlight-color: transparent;
+    }
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted #000;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+th {
+  font-weight: bold;
+  vertical-align: bottom;
+}
+
+td {
+  font-weight: normal;
+  vertical-align: top;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+pre {
+  white-space: pre;
+  /* CSS2 */
+  white-space: pre-wrap;
+  /* CSS 2.1 */
+  white-space: pre-line;
+  /* CSS 3 (and 2.1 as well, actually) */
+  word-wrap: break-word;
+  /* IE */
+}
+
+input, select {
+  vertical-align: middle;
+}
+
+input {
+  &[type="radio"] {
+    vertical-align: text-bottom;
+  }
+  &[type="checkbox"] {
+    vertical-align: bottom;
+  }
+}
+
+.ie7 input[type="checkbox"] {
+  vertical-align: baseline;
+}
+
+.ie6 input {
+  vertical-align: text-bottom;
+}
+
+table {
+  font-size: inherit;
+  font: 100%;
+}
+
+small {
+  font-size: 85%;
+}
+
+strong {
+  font-weight: bold;
+}
+
+td {
+  vertical-align: top;
+  img {
+    vertical-align: top;
+  }
+}
+
+sub {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+}
+
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+pre, code, kbd, samp {
+  font-family: monospace, sans-serif;
+}
+
+.clickable, label {
+  cursor: pointer;
+}
+
+input {
+  &[type=button], &[type=submit], &[type=file] {
+    cursor: pointer;
+  }
+}
+
+button {
+  cursor: pointer;
+  margin: 0;
+}
+
+input, select, textarea {
+  margin: 0;
+}
+
+button, input[type=button] {
+  width: auto;
+  overflow: visible;
+}
+
+.ie7 img {
+  -ms-interpolation-mode: bicubic;
+}
+
+.clearfix {
+  &:before {
+    content: "\0020";
+    display: block;
+    height: 0;
+    overflow: hidden;
+  }
+  &:after {
+    content: "\0020";
+    display: block;
+    height: 0;
+    overflow: hidden;
+    clear: both;
+  }
+  zoom: 1;
+}
+/*	
+	css  스타일링, 기본 레이아웃
+ */
+.site-header {
+	height:42px;
+	position: absolute;
+	left:0;
+	right:0;
+	z-index:1500;
+	h1 {
+		text-align:center;
+		line-height:42px;
+	}
+	.icon-menu {
+		position: absolute;
+		left:0;
+		top:0;
+		display:block;
+		width:42px;
+		height:42px;
+		span {
+			display:block;
+			height:16px;
+			width:16px;
+			margin:13px;
+			background:url('/images/icons/ico-menu.svg');
+			background-size: 100% 100%;
+		}
+	}
+	.icon-user {
+		position: absolute;
+		right:0;
+		top:0;
+		display:block;
+		width:42px;
+		height:42px;
+		span {
+			display:block;
+			height:16px;
+			width:16px;
+			margin:13px;
+			background:url('/images/icons/ico-user.svg');
+			background-size: 100% 100%;
+		}
+	}	
+}
+
+/*
+	버튼
+ */
+.btn-area {
+	padding:20px 7px 14px;
+	display:-webkit-flex;
+	display:-ms-flexbox;
+	display:flex;
+	[class^="btn-"] {
+		-webkit-flex:1;
+		    -ms-flex:1;
+		        flex:1;
+		        margin:0 7px;        
+		        text-align:center;
+		        color:#fff;
+		        border-radius: 3px;
+	} 
+	.btn-big {
+		background: #4c322e;
+		color:#fff;
+		font-size:$f16;
+		padding:12px 0;
+	}
+}
+
+/* 
+	탭
+*/
+.tab-style1 {
+	background: #fbe600;
+	padding: 0 15px;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	li {
+		-webkit-flex: 1;
+		-ms-flex: 1;
+		flex: 1;
+		-webkit-align-items:center;
+		    -ms-flex-align:center;
+		        align-items:center;
+		a {
+			text-align:center;
+			display:block;              
+			font-size: $f13; 
+			color:#380c0b;
+			opacity: 0.5;
+			height:35px;
+			line-height:35px;
+			border-top-left-radius: 2px;
+			border-top-right-radius: 2px;
+			font-weight:600;
+		}
+		&.is-active {
+			a {
+				opacity:1;
+				margin-top:6px;
+				background:#fff;
+				height:29px;
+				line-height:29px;
+			}
+		}
+	}
+}
