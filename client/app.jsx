@@ -2,15 +2,23 @@ App = React.createClass({
 	render() {
 		return (
 			<div>
-				<main className="alcenter">  
-	  
+				<main className="alcenter">
+
 		      <div id="title">
 		        <img src="images/main/entry-main-logo-v1.png"  alt="Wecome Music Entry Zone Let's Play" />
 		      </div>
 
-		      <a id="loginBtn" href="/account/login" className="" title="login">
-		        <img src="images/main/entry-main-login-btn-v1.png"  alt="login" />
-		      </a>
+					<div>
+			      <a id="loginBtn" href="/account/login" className="" title="login">
+			        <img src="images/main/entry-main-login-btn-v1.png"  alt="login" />
+			      </a>
+					</div>
+
+					<div>
+						<a id="btnRooms" href="/rooms" title="rooms">
+							go to rooms
+			      </a>
+					</div>
 
 		    </main>
 
@@ -31,7 +39,7 @@ App = React.createClass({
 		      <div id="copyright">
 		        ©2015 Entry Zone, Inc.
 		      </div>
-		      
+
 		    </footer>
 	    </div>
 		);

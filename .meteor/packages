@@ -7,12 +7,10 @@
 meteor-platform
 accounts-ui
 accounts-password
-msavin:mongol
 react
-jhribal:reflux
 kadira:flow-router
 kadira:react-layout
-kadira:reaktor
 meteorhacks:fast-render
 meteorhacks:npm
 npm-container
+cosmos:browserify

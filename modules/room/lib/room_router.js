@@ -1,4 +1,4 @@
-FlowRouter.route('/room', {
+FlowRouter.route('/rooms', {
     // do some action for this route
     action: function(params, queryParams) {
         // console.log("Params:", params);
