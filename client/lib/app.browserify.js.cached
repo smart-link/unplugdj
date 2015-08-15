@@ -2,9 +2,6 @@
 Reflux = require('reflux');
 RefluxStateMixin = require('reflux-state-mixin')(Reflux);
 
-// var Alt = require("alt");
-// alt = new Alt();
-
 },{"reflux":3,"reflux-state-mixin":2}],2:[function(require,module,exports){
 (function (global){
 'use strict';
